@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+
+.hero-border-middle{
+    padding: 0 10px;
+    margin: 0 10px;
+    border-right: 2px solid #cccccc;
+    border-left: 2px solid #cccccc;
+}
+
+.card--list{
+    width: 100%;
+}
+
+
+
+.product--price{
+  font-weight: 300;
+}
+
+.card .product--title, .product--price{
+    margin-top: 10px;
+}
+
+/* contact page */
+.contact .form, .contact h2, .contact p{
+    display: grid;
+    font-weight:200;
+}
+
+.contact form span{
+    color: #cccccc;
+}
+.form input, form button{
+    border: 1px solid #b9b9b9;
+    padding: 6px;
+}
+
+.contact form button{
+    border: 1px solid #b9b9b9;
+    padding: 10px 30px;
+    margin-top: 12px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    
+}
+
+/* all form buttons */
+form button:hover{
+    background-color: rgb(59, 58, 58); 
+}
+
+.contact form label{
+    margin-top:6px;
+    margin-bottom: 6px;
+}
+
+
+/* About page */
+
+.about h2, .about p{
+    line-height: 2.25rem;
+    letter-spacing: 0.025em;
+}
+
+
+
+@media (max-width: 425px){
+  .product--image--container{
+    width: 165px;
+    height: 200px;
+}
+
+.hero-border-middle{
+    padding: 0 5px;
+    margin: 0 5px;
+}
+  
+}
+
+@media (max-width: 320px){
+  .product--image--container{
+    width: 120px;
+    height: 150px;
+}
+
+}
